@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "TzIdfddrqt5Vpq+sGwVXtB+uIBCsXrmA7+6RiH5B8Y7WqE8NQQ5e9/Akv+7kMOT/XuslxYNiHqPMZumPGC1x1g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Tihohod\\Desktop\\Работа\\train_2\\GrpcService1\\WagonClient\\WagonClient.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Tihohod\\.nuget\\packages\\google.protobuf\\3.29.3\\google.protobuf.3.29.3.nupkg.sha512",
+    "C:\\Users\\Tihohod\\.nuget\\packages\\grpc.core.api\\2.67.0\\grpc.core.api.2.67.0.nupkg.sha512",
+    "C:\\Users\\Tihohod\\.nuget\\packages\\grpc.net.client\\2.67.0\\grpc.net.client.2.67.0.nupkg.sha512",
+    "C:\\Users\\Tihohod\\.nuget\\packages\\grpc.net.common\\2.67.0\\grpc.net.common.2.67.0.nupkg.sha512",
+    "C:\\Users\\Tihohod\\.nuget\\packages\\grpc.tools\\2.54.0\\grpc.tools.2.54.0.nupkg.sha512",
+    "C:\\Users\\Tihohod\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
