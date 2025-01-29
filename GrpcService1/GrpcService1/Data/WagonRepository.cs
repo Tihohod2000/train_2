@@ -45,7 +45,7 @@ LEFT JOIN ""Epc"" epc
     ON epc.""Id"" = epc_event.""IdEpc""
 WHERE
     epc.""Type"" = 1
-  AND dep.""Time"" BETWEEN '01.02.2024 10:28:05' AND '02.03.2024 10:28:05'
+  AND dep.""Time"" BETWEEN @StartTime AND @EndTime
     AND epc.""Number"" != '00000000';";
 
     var dbResult = await connection.QueryAsync(query, new
