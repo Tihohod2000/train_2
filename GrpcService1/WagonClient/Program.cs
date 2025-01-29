@@ -14,9 +14,29 @@ class Program
         // Создание клиента
         var client = new WagonService.WagonServiceClient(channel);
 
-        // Установка времени начала и конца
-        var startTime = Timestamp.FromDateTime(DateTime.UtcNow.AddDays(-1)); // 1 день назад
-        var endTime = Timestamp.FromDateTime(DateTime.UtcNow.AddDays(1));   // 1 день вперед
+        // Запрос времени начала
+        Console.WriteLine("Введите дату начала (в формате: yyyy-MM-dd HH:mm):");
+        string startInput = Console.ReadLine();
+        DateTime startDateTime;
+        if (!DateTime.TryParse(startInput, out startDateTime))
+        {
+            Console.WriteLine("Некорректный формат даты начала.");
+            return;
+        }
+        
+        // Запрос времени окончания
+        Console.WriteLine("Введите дату окончания (в формате: yyyy-MM-dd HH:mm):");
+        string endInput = Console.ReadLine();
+        DateTime endDateTime;
+        if (!DateTime.TryParse(endInput, out endDateTime))
+        {
+            Console.WriteLine("Некорректный формат даты окончания.");
+            return;
+        }
+
+        // Преобразование в Timestamp
+        var startTime = Timestamp.FromDateTime(startDateTime.ToUniversalTime());
+        var endTime = Timestamp.FromDateTime(endDateTime.ToUniversalTime());
 
         // Создание запроса
         var request = new WagonRequest

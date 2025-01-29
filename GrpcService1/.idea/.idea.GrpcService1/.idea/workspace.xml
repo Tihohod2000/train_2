@@ -9,15 +9,43 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e30ec04c-fd12-4274-9a34-36b152d700a4" name="Changes" comment="" />
+    <list default="true" id="e30ec04c-fd12-4274-9a34-36b152d700a4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GrpcService1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GrpcService1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GrpcService1/Data/WagonRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcService1/Data/WagonRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GrpcService1/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcService1/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GrpcService1/bin/Debug/net6.0/GrpcService1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcService1/bin/Debug/net6.0/GrpcService1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GrpcService1/bin/Debug/net6.0/GrpcService1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcService1/bin/Debug/net6.0/GrpcService1.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GrpcService1/obj/Debug/net6.0/GrpcService1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcService1/obj/Debug/net6.0/GrpcService1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GrpcService1/obj/Debug/net6.0/GrpcService1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcService1/obj/Debug/net6.0/GrpcService1.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GrpcService1/obj/Debug/net6.0/ref/GrpcService1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcService1/obj/Debug/net6.0/ref/GrpcService1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GrpcService1/obj/Debug/net6.0/refint/GrpcService1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcService1/obj/Debug/net6.0/refint/GrpcService1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GrpcService1/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcService1/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GrpcService1/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcService1/obj/staticwebassets.pack.sentinel" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WagonClient/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WagonClient/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WagonClient/bin/Debug/net6.0/WagonClient.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WagonClient/bin/Debug/net6.0/WagonClient.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WagonClient/bin/Debug/net6.0/WagonClient.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WagonClient/bin/Debug/net6.0/WagonClient.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WagonClient/obj/Debug/net6.0/WagonClient.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WagonClient/obj/Debug/net6.0/WagonClient.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WagonClient/obj/Debug/net6.0/WagonClient.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WagonClient/obj/Debug/net6.0/WagonClient.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WagonClient/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/WagonClient/obj/rider.project.model.nuget.info" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="DpaMonitoringSettings">
+    <option name="autoShow" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/f1dd57165bfd91875761329ac3a8b17f6606ad18/src/libraries/System.Private.CoreLib/src/System/Runtime/CompilerServices/AsyncTaskMethodBuilderT.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4e7d1760ee621d939d6c87a4818f36525d4d27513aa9a536bf91252934862/UnaryServerMethodInvoker.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2sIexL9K64t5H1ZVrhFrNDEMSTd" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -28,6 +56,7 @@
     ".NET Launch Settings Profile.GrpcService1.executor": "Run",
     ".NET Project.WagonClient.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "dev",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -86,7 +115,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738147762519</updated>
-      <workItem from="1738147764662" duration="2903000" />
+      <workItem from="1738147764662" duration="6379000" />
+      <workItem from="1738154414555" duration="3375000" />
     </task>
     <servers />
   </component>
@@ -105,13 +135,26 @@
           <line>21</line>
           <properties documentPath="C:\Users\Tihohod\Desktop\Работа\train_2\GrpcService1\GrpcService1\Services\WagonService.cs" containingFunctionPresentation="Method 'GetWagons'">
             <startOffsets>
-              <option value="542" />
+              <option value="543" />
             </startOffsets>
             <endOffsets>
-              <option value="624" />
+              <option value="625" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/GrpcService1/Services/WagonService.cs</url>
+          <line>23</line>
+          <properties documentPath="C:\Users\Tihohod\Desktop\Работа\train_2\GrpcService1\GrpcService1\Services\WagonService.cs" containingFunctionPresentation="Method 'GetWagons'">
+            <startOffsets>
+              <option value="635" />
+            </startOffsets>
+            <endOffsets>
+              <option value="670" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
