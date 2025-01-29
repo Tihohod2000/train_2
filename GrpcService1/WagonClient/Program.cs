@@ -52,7 +52,7 @@ class Program
         foreach (var wagon in response.Wagons)
         {
             Console.WriteLine($"Инвентарный номер: {wagon.InventoryNumber}, " +
-                              $"Прибытие: {wagon.ArrivalTime.ToDateTime()}, " +
+                              $"Прибытие: {wagon.ArrivalTime}, " +
                               $"Отправление: {wagon.DepartureTime.ToDateTime()}");
         }
 

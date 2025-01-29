@@ -12,21 +12,25 @@
     <list default="true" id="e30ec04c-fd12-4274-9a34-36b152d700a4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GrpcService1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GrpcService1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GrpcService1/Data/WagonRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcService1/Data/WagonRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GrpcService1/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcService1/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GrpcService1/Protos/greet.proto" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcService1/Protos/greet.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GrpcService1/Services/WagonService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcService1/Services/WagonService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GrpcService1/bin/Debug/net6.0/GrpcService1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcService1/bin/Debug/net6.0/GrpcService1.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GrpcService1/bin/Debug/net6.0/GrpcService1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcService1/bin/Debug/net6.0/GrpcService1.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GrpcService1/obj/Debug/net6.0/GrpcService1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcService1/obj/Debug/net6.0/GrpcService1.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GrpcService1/obj/Debug/net6.0/GrpcService1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcService1/obj/Debug/net6.0/GrpcService1.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GrpcService1/obj/Debug/net6.0/Protos/Greet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcService1/obj/Debug/net6.0/Protos/Greet.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GrpcService1/obj/Debug/net6.0/ref/GrpcService1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcService1/obj/Debug/net6.0/ref/GrpcService1.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GrpcService1/obj/Debug/net6.0/refint/GrpcService1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcService1/obj/Debug/net6.0/refint/GrpcService1.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GrpcService1/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcService1/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GrpcService1/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcService1/obj/staticwebassets.pack.sentinel" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WagonClient/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WagonClient/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WagonClient/Protos/greet.proto" beforeDir="false" afterPath="$PROJECT_DIR$/WagonClient/Protos/greet.proto" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WagonClient/bin/Debug/net6.0/WagonClient.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WagonClient/bin/Debug/net6.0/WagonClient.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WagonClient/bin/Debug/net6.0/WagonClient.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WagonClient/bin/Debug/net6.0/WagonClient.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WagonClient/obj/Debug/net6.0/Protos/Greet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WagonClient/obj/Debug/net6.0/Protos/Greet.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WagonClient/obj/Debug/net6.0/WagonClient.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WagonClient/obj/Debug/net6.0/WagonClient.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WagonClient/obj/Debug/net6.0/WagonClient.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WagonClient/obj/Debug/net6.0/WagonClient.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WagonClient/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/WagonClient/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WagonClient/obj/Debug/net6.0/ref/WagonClient.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WagonClient/obj/Debug/net6.0/ref/WagonClient.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WagonClient/obj/Debug/net6.0/refint/WagonClient.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WagonClient/obj/Debug/net6.0/refint/WagonClient.dll" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +45,9 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/f1dd57165bfd91875761329ac3a8b17f6606ad18/src/libraries/System.Private.CoreLib/src/System/Runtime/CompilerServices/AsyncTaskMethodBuilderT.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/f1dd57165bfd91875761329ac3a8b17f6606ad18/src/libraries/System.Private.CoreLib/src/System/Threading/ExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/f1dd57165bfd91875761329ac3a8b17f6606ad18/src/libraries/System.Private.CoreLib/src/System/Threading/Tasks/Task.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/f1dd57165bfd91875761329ac3a8b17f6606ad18/src/libraries/System.Private.CoreLib/src/System/Threading/Tasks/TaskContinuation.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4e7d1760ee621d939d6c87a4818f36525d4d27513aa9a536bf91252934862/UnaryServerMethodInvoker.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
@@ -53,9 +60,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    ".NET Launch Settings Profile.GrpcService1.executor": "Run",
+    ".NET Launch Settings Profile.GrpcService1.executor": "Debug",
     ".NET Project.WagonClient.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "XThreadsFramesViewSplitterKey": "1.052459",
     "git-widget-placeholder": "dev",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -116,7 +124,7 @@
       <option name="presentableId" value="Default" />
       <updated>1738147762519</updated>
       <workItem from="1738147764662" duration="6379000" />
-      <workItem from="1738154414555" duration="3375000" />
+      <workItem from="1738154414555" duration="8534000" />
     </task>
     <servers />
   </component>
@@ -131,30 +139,17 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/GrpcService1/Services/WagonService.cs</url>
-          <line>21</line>
-          <properties documentPath="C:\Users\Tihohod\Desktop\Работа\train_2\GrpcService1\GrpcService1\Services\WagonService.cs" containingFunctionPresentation="Method 'GetWagons'">
+          <url>file://$PROJECT_DIR$/GrpcService1/Data/WagonRepository.cs</url>
+          <line>57</line>
+          <properties documentPath="C:\Users\Tihohod\Desktop\Работа\train_2\GrpcService1\GrpcService1\Data\WagonRepository.cs" containingFunctionPresentation="Method 'GetWagonsAsync'">
             <startOffsets>
-              <option value="543" />
+              <option value="1654" />
             </startOffsets>
             <endOffsets>
-              <option value="625" />
+              <option value="2023" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/GrpcService1/Services/WagonService.cs</url>
-          <line>23</line>
-          <properties documentPath="C:\Users\Tihohod\Desktop\Работа\train_2\GrpcService1\GrpcService1\Services\WagonService.cs" containingFunctionPresentation="Method 'GetWagons'">
-            <startOffsets>
-              <option value="635" />
-            </startOffsets>
-            <endOffsets>
-              <option value="670" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="4" />
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -22,23 +22,31 @@ public class WagonRepository : IWagonRepository
     using var connection = new NpgsqlConnection(_connectionString);
     
     string query = @"SELECT
-        ""Epc"".""Number"" AS ""inventory_number"",
-        MIN(""EventArrival"".""Time"") AS ""arrival_time"",
-        MAX(""EventDeparture"".""Time"") AS ""departure_time""
-    FROM
-        ""Epc""
-        LEFT JOIN ""EpcEvent"" ON ""Epc"".""Id"" = ""EpcEvent"".""IdEpc""
-        JOIN ""EventArrival"" ON ""EpcEvent"".""IdPath"" = ""EventArrival"".""IdPath""
-        JOIN ""EventDeparture"" ON ""EpcEvent"".""IdPath"" = ""EventDeparture"".""IdPath""
-        LEFT JOIN ""Path"" ON ""EpcEvent"".""IdPath"" = ""Path"".""Id""
+    epc.""Number"" AS ""inventory_number"",
+    arr.""Time"" AS ""arrival_time"",
+    dep.""Time"" AS ""departure_time""
+ --   dep.""IdPath"",
+  --  dep.""TrainNumber""
+FROM
+    ""EventDeparture"" dep
+LEFT JOIN LATERAL (
+    SELECT *
+    FROM ""EventArrival""
     WHERE
-        ""Epc"".""Type"" = 1
-        AND ""Epc"".""Number"" != '00000000'
-        AND ""EventDeparture"".""Time"" BETWEEN @StartTime AND @EndTime
-        AND ""EventArrival"".""IdPath"" = ""EventDeparture"".""IdPath""
-        AND ""EventDeparture"".""Time"" > ""EventArrival"".""Time""
-    GROUP BY
-        ""Epc"".""Number"", ""Path"".""Id"";";
+        ""EventArrival"".""IdPath"" = dep.""IdPath""
+        AND ""EventArrival"".""Time"" < dep.""Time""
+    ORDER BY ""EventArrival"".""Time"" DESC
+    LIMIT 1
+) arr ON true
+LEFT JOIN ""EpcEvent"" epc_event
+    ON epc_event.""Time"" = dep.""Time""
+    AND epc_event.""IdPath"" = dep.""IdPath""
+LEFT JOIN ""Epc"" epc
+    ON epc.""Id"" = epc_event.""IdEpc""
+WHERE
+    epc.""Type"" = 1
+  AND dep.""Time"" BETWEEN '01.02.2024 10:28:05' AND '02.03.2024 10:28:05'
+    AND epc.""Number"" != '00000000';";
 
     var dbResult = await connection.QueryAsync(query, new
     {
