@@ -52,8 +52,8 @@ class Program
         foreach (var wagon in response.Wagons)
         {
             Console.WriteLine($"Инвентарный номер: {wagon.InventoryNumber}, " +
-                              $"Прибытие: {wagon.ArrivalTime}, " +
-                              $"Отправление: {wagon.DepartureTime.ToDateTime()}");
+                              $"Прибытие: {(wagon.ArrivalTime != null ? wagon.DepartureTime.ToDateTime() : "не указано")}, " +
+                              $"Отправление: {(wagon.DepartureTime != null ? wagon.DepartureTime.ToDateTime() : "не указано")}");
         }
 
         Console.WriteLine("Запрос выполнен.");
