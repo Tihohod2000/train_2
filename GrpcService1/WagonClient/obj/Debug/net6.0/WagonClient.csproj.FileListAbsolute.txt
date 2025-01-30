@@ -19,3 +19,5 @@ C:\Users\Tihohod\Desktop\Работа\train_2\GrpcService1\WagonClient\obj\Debug
 C:\Users\Tihohod\Desktop\Работа\train_2\GrpcService1\WagonClient\obj\Debug\net6.0\WagonClient.pdb
 C:\Users\Tihohod\Desktop\Работа\train_2\GrpcService1\WagonClient\obj\Debug\net6.0\WagonClient.genruntimeconfig.cache
 C:\Users\Tihohod\Desktop\Работа\train_2\GrpcService1\WagonClient\obj\Debug\net6.0\ref\WagonClient.dll
+C:\Users\Tihohod\Desktop\Работа\train_2\GrpcService1\WagonClient\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Tihohod\Desktop\Работа\train_2\GrpcService1\WagonClient\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
