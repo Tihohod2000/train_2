@@ -1,21 +1,21 @@
 ﻿using System;
 using System.Windows;
-using Grpc.Net.Client;
-using GrpcWagonService; // Пространство имен, которое будет сгенерировано на основе .proto
+using GrpcWagonService;
 using Google.Protobuf.WellKnownTypes;
 using System.Collections.ObjectModel;
+using WpfApp1.Data;
 
 namespace WpfApp1
 {
     public partial class MainWindow : Window
     {
-        private readonly WagonService.WagonServiceClient _client;
+        private readonly IClientService _clientService;
 
-        public MainWindow()
+        // Конструктор для получения зависимости через DI
+        public MainWindow(IClientService clientService)
         {
             InitializeComponent();
-            var channel = GrpcChannel.ForAddress("http://localhost:5000");
-            _client = new WagonService.WagonServiceClient(channel);
+            _clientService = clientService;
         }
 
         private async void OnGetWagonsClick(object sender, RoutedEventArgs e)
@@ -25,16 +25,17 @@ namespace WpfApp1
                 // Получаем введенные данные
                 string startDateText = StartDateTextBox.Text;
                 string endDateText = EndDateTextBox.Text;
-                
+
+                // Проверка на пустые строки
                 if (string.IsNullOrEmpty(startDateText) || string.IsNullOrEmpty(endDateText))
                 {
-                    MessageBox.Show("Пожалуйста введите дату и время в указанном формате.");
+                    MessageBox.Show("Please enter both start and end dates.");
                     return;
                 }
 
                 // Преобразуем строки в DateTime
-                DateTime startDateTime = DateTime.ParseExact(startDateText, "yyyy-MM-dd HH:mm:ss.fff", null);
-                DateTime endDateTime = DateTime.ParseExact(endDateText, "yyyy-MM-dd HH:mm:ss.fff", null);
+                DateTime startDateTime = DateTime.ParseExact(startDateText, "yyyy-MM-dd HH:mm:ss.ffffff", null);
+                DateTime endDateTime = DateTime.ParseExact(endDateText, "yyyy-MM-dd HH:mm:ss.ffffff", null);
 
                 // Конвертируем в gRPC формат
                 var startTime = Timestamp.FromDateTime(startDateTime.ToUniversalTime());
@@ -47,7 +48,7 @@ namespace WpfApp1
                 };
 
                 // Запрос к серверу
-                var response = await _client.GetWagonsAsync(request);
+                var response = await _clientService.GetWagonsAsync(request);
 
                 // Отображаем результаты в DataGrid
                 var wagonsList = new ObservableCollection<WagonInfo>();
@@ -59,19 +60,19 @@ namespace WpfApp1
                         InventoryNumber = wagon.InventoryNumber.ToString(),
                         ArrivalTime = wagon.ArrivalTime != null 
                             ? wagon.ArrivalTime.ToDateTime().ToString("yyyy-MM-dd HH:mm:ss.fff") 
-                            : "не указано", // Если ArrivalTime пустое, выводим "не указано"
+                            : "не указано",
                         DepartureTime = wagon.DepartureTime != null 
                             ? wagon.DepartureTime.ToDateTime().ToString("yyyy-MM-dd HH:mm:ss.fff") 
-                            : "не указано" // Если DepartureTime пустое, выводим "не указано"
+                            : "не указано"
                     });
-                    Console.WriteLine(wagon.InventoryNumber.ToString());
+                    // Console.WriteLine(wagon.InventoryNumber.ToString());
                 }
 
                 WagonsDataGrid.ItemsSource = wagonsList;
             }
             catch (FormatException)
             {
-                MessageBox.Show("Invalid date format. Please use 'yyyy-MM-dd HH:mm:ss'.");
+                MessageBox.Show("Invalid date format. Please use 'yyyy-MM-dd HH:mm:ss.fff'.");
             }
             catch (Exception ex)
             {

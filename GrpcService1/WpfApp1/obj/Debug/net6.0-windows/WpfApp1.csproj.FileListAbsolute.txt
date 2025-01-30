@@ -24,3 +24,5 @@ C:\Users\Tihohod\Desktop\Работа\train_2\GrpcService1\WpfApp1\obj\Debug\net
 C:\Users\Tihohod\Desktop\Работа\train_2\GrpcService1\WpfApp1\obj\Debug\net6.0-windows\WpfApp1.dll
 C:\Users\Tihohod\Desktop\Работа\train_2\GrpcService1\WpfApp1\obj\Debug\net6.0-windows\WpfApp1.genruntimeconfig.cache
 C:\Users\Tihohod\Desktop\Работа\train_2\GrpcService1\WpfApp1\obj\Debug\net6.0-windows\ref\WpfApp1.dll
+C:\Users\Tihohod\Desktop\Работа\train_2\GrpcService1\WpfApp1\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Tihohod\Desktop\Работа\train_2\GrpcService1\WpfApp1\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
