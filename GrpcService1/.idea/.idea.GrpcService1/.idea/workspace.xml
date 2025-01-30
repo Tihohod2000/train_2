@@ -12,20 +12,13 @@
   <component name="ChangeListManager">
     <list default="true" id="e30ec04c-fd12-4274-9a34-36b152d700a4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GrpcService1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GrpcService1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GrpcService1/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcService1/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GrpcService1/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcService1/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WagonClient/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/WagonClient/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WagonClient/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WagonClient/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WagonClient/bin/Debug/net6.0/WagonClient.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WagonClient/bin/Debug/net6.0/WagonClient.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WagonClient/bin/Debug/net6.0/WagonClient.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WagonClient/bin/Debug/net6.0/WagonClient.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WagonClient/obj/Debug/net6.0/WagonClient.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WagonClient/obj/Debug/net6.0/WagonClient.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WagonClient/obj/Debug/net6.0/WagonClient.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WagonClient/obj/Debug/net6.0/WagonClient.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WagonClient/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/WagonClient/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WpfApp1/MainWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/WpfApp1/MainWindow.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WpfApp1/MainWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WpfApp1/MainWindow.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WpfApp1/bin/Debug/net6.0-windows/WpfApp1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WpfApp1/bin/Debug/net6.0-windows/WpfApp1.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WpfApp1/bin/Debug/net6.0-windows/WpfApp1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WpfApp1/bin/Debug/net6.0-windows/WpfApp1.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WpfApp1/obj/Debug/net6.0-windows/MainWindow.baml" beforeDir="false" afterPath="$PROJECT_DIR$/WpfApp1/obj/Debug/net6.0-windows/MainWindow.baml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WpfApp1/obj/Debug/net6.0-windows/MainWindow.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WpfApp1/obj/Debug/net6.0-windows/MainWindow.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WpfApp1/obj/Debug/net6.0-windows/WpfApp1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WpfApp1/obj/Debug/net6.0-windows/WpfApp1.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WpfApp1/obj/Debug/net6.0-windows/WpfApp1.g.resources" beforeDir="false" afterPath="$PROJECT_DIR$/WpfApp1/obj/Debug/net6.0-windows/WpfApp1.g.resources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WpfApp1/obj/Debug/net6.0-windows/WpfApp1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WpfApp1/obj/Debug/net6.0-windows/WpfApp1.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WpfApp1/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/WpfApp1/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WpfApp1/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/WpfApp1/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +72,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected=".NET Project.WpfApp1">
+  <component name="RunManager" selected=".NET Project.WagonClient">
     <configuration name="WagonClient" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />

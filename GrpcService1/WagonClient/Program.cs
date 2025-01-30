@@ -25,7 +25,7 @@ class Program
         }
         
         // Запрос времени окончания
-        Console.WriteLine("Введите дату окончания (в формате: yyyy-MM-dd HH:mm):");
+        Console.WriteLine("Введите дату окончания (в формате: yyyy-MM-dd HH:mm:ss.ffffff):");
         string endInput = Console.ReadLine();
         DateTime endDateTime;
         if (!DateTime.TryParse(endInput, out endDateTime))
