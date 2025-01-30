@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcWagonService";
+
+package greet;
+
+import "google/protobuf/timestamp.proto";
+
+service WagonService {
+  rpc GetWagons(WagonRequest) returns (WagonResponse);
+}
+
+message WagonRequest {
+  google.protobuf.Timestamp start_time = 1;
+  google.protobuf.Timestamp end_time = 2;
+}
+
+message Wagon {
+  optional int64 inventory_number = 1;
+  optional google.protobuf.Timestamp arrival_time = 2;
+  optional google.protobuf.Timestamp departure_time = 3;
+}
+
+message WagonResponse {
+  repeated Wagon wagons = 1;
+}
