@@ -1,0 +1,37 @@
+# Папки среды разработки
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+
+# Папки и файлы системы сборки
+**/bin/
+**/obj/
+**/[Bb]uild/
+**/[Ll]ogs/
+
+# Файлы и папки, создаваемые при запуске
+*.log
+*.tlog
+*.tmp
+*.pidb
+*.svclog
+
+# Конфигурация и отладка
+*.db
+*.cache
+*.pdb
+*.mdb
+
+# Пользовательские настройки
+*.DotSettings.user
+.vs/
+.vsconfig
+
+# Временные файлы
+*.bak
+*.swp
+*.orig
+*.tmp
+
