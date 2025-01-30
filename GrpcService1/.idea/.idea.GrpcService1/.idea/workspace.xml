@@ -11,33 +11,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e30ec04c-fd12-4274-9a34-36b152d700a4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/WagonClient/Data/IWagonServiceClient.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WagonClient/Data/WagonServiceClient.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GrpcService1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GrpcService1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GrpcService1/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcService1/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GrpcService1/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcService1/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WagonClient/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WagonClient/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WagonClient/WagonClient.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WagonClient/WagonClient.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WagonClient/bin/Debug/net6.0/WagonClient.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/WagonClient/bin/Debug/net6.0/WagonClient.deps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WagonClient/bin/Debug/net6.0/WagonClient.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WagonClient/bin/Debug/net6.0/WagonClient.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WagonClient/bin/Debug/net6.0/WagonClient.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WagonClient/bin/Debug/net6.0/WagonClient.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WagonClient/obj/Debug/net6.0/WagonClient.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WagonClient/obj/Debug/net6.0/WagonClient.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WagonClient/obj/Debug/net6.0/WagonClient.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WagonClient/obj/Debug/net6.0/WagonClient.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WagonClient/obj/Debug/net6.0/WagonClient.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WagonClient/obj/Debug/net6.0/WagonClient.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WagonClient/obj/Debug/net6.0/WagonClient.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/WagonClient/obj/Debug/net6.0/WagonClient.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WagonClient/obj/Debug/net6.0/WagonClient.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WagonClient/obj/Debug/net6.0/WagonClient.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WagonClient/obj/Debug/net6.0/WagonClient.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WagonClient/obj/Debug/net6.0/WagonClient.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WagonClient/obj/Debug/net6.0/ref/WagonClient.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WagonClient/obj/Debug/net6.0/ref/WagonClient.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WagonClient/obj/Debug/net6.0/refint/WagonClient.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WagonClient/obj/Debug/net6.0/refint/WagonClient.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WagonClient/obj/WagonClient.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/WagonClient/obj/WagonClient.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WagonClient/obj/WagonClient.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/WagonClient/obj/WagonClient.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WagonClient/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/WagonClient/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WagonClient/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WagonClient/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WagonClient/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/WagonClient/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WagonClient/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/WagonClient/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WagonClient/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/WagonClient/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WpfApp1/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/WpfApp1/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WpfApp1/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/WpfApp1/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,29 +43,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.GrpcService1.executor": "Run",
-    ".NET Project.WagonClient.executor": "Run",
-    ".NET Project.WpfApp1.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "XThreadsFramesViewSplitterKey": "1.052459",
-    "git-widget-placeholder": "dev-DI-WPF",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.GrpcService1.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.WagonClient.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.WpfApp1.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;1.052459&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev-DI-WPF&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\Tihohod\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\Tihohod\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\Tihohod\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\Tihohod\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\Tihohod\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\Tihohod\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Project.WagonClient">
     <configuration name="WagonClient" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />

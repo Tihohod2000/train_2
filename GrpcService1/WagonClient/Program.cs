@@ -25,7 +25,7 @@ class Program
             return;
         }
 
-        Console.WriteLine("Введите дату окончания (yyyy-MM-dd HH:mm):");
+        Console.WriteLine("Введите дату окончания (yyyy-MM-dd HH:mm:ss.ffffff):");
         if (!DateTime.TryParse(Console.ReadLine(), out DateTime endDateTime))
         {
             Console.WriteLine("Некорректный формат даты.");
