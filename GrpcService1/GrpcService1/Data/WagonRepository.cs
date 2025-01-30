@@ -18,32 +18,50 @@ public class WagonRepository : IWagonRepository
     }
 
     public async Task<IEnumerable<Wagon>> GetWagonsAsync(Timestamp startTime, Timestamp endTime)
+{
+    using var connection = new NpgsqlConnection(_connectionString);
+    
+    string query = @"SELECT
+    epc.""Number"" AS ""inventory_number"",
+    arr.""Time"" AS ""arrival_time"",
+    dep.""Time"" AS ""departure_time""
+ --   dep.""IdPath"",
+  --  dep.""TrainNumber""
+FROM
+    ""EventDeparture"" dep
+LEFT JOIN LATERAL (
+    SELECT *
+    FROM ""EventArrival""
+    WHERE
+        ""EventArrival"".""IdPath"" = dep.""IdPath""
+        AND ""EventArrival"".""Time"" < dep.""Time""
+    ORDER BY ""EventArrival"".""Time"" DESC
+    LIMIT 1
+) arr ON true
+LEFT JOIN ""EpcEvent"" epc_event
+    ON epc_event.""Time"" = dep.""Time""
+    AND epc_event.""IdPath"" = dep.""IdPath""
+LEFT JOIN ""Epc"" epc
+    ON epc.""Id"" = epc_event.""IdEpc""
+WHERE
+    epc.""Type"" = 1
+  AND dep.""Time"" BETWEEN @StartTime AND @EndTime
+    AND epc.""Number"" != '00000000';";
+
+    var dbResult = await connection.QueryAsync(query, new
     {
-        using var connection = new NpgsqlConnection(_connectionString);
-        string query = @"SELECT
-                ""Epc"".""Number"" AS ""inventory_number"",
-                MIN(""EventArrival"".""Time"") AS ""arrival_time"",
-                MAX(""EventDeparture"".""Time"") AS ""departure_time""
-            FROM
-                ""Epc""
-                LEFT JOIN ""EpcEvent"" ON ""Epc"".""Id"" = ""EpcEvent"".""IdEpc""
-                LEFT JOIN ""EventArrival"" ON ""EpcEvent"".""IdPath"" = ""EventArrival"".""IdPath""
-                LEFT JOIN ""EventDeparture"" ON ""EpcEvent"".""IdPath"" = ""EventDeparture"".""IdPath""
-                LEFT JOIN ""Path"" ON ""EpcEvent"".""IdPath"" = ""Path"".""Id""
-            WHERE
-                ""Epc"".""Type"" = 1  -- Только вагоны
-                AND ""Epc"".""Number"" != '00000000'
-                AND ""EventDeparture"".""Time"" BETWEEN @StartTime AND @EndTime
-                AND ""EventArrival"".""IdPath"" = ""EventDeparture"".""IdPath""
-                AND ""EventDeparture"".""Time"" > ""EventArrival"".""Time""
-            GROUP BY
-                ""Epc"".""Number"", ""Path"".""Id"";";
+        StartTime = startTime.ToDateTime(),
+        EndTime = endTime.ToDateTime()
+    });
 
+    // Конвертируем результат в протобуф-объекты
+    var wagons = dbResult.Select(row => new Wagon
+    {
+        InventoryNumber = Convert.ToInt64(row.inventory_number), // Конвертируем к int64
+        ArrivalTime = row.arrival_time == null ? null : Timestamp.FromDateTime((DateTime)row.arrival_time),
+        DepartureTime = row.departure_time == null ? null : Timestamp.FromDateTime((DateTime)row.departure_time)
+    });
 
-        return await connection.QueryAsync<Wagon>(query, new
-        {
-            StartTime = startTime.ToDateTime(),
-            EndTime = endTime.ToDateTime()
-        });
-    }
+    return wagons;
+}
 }

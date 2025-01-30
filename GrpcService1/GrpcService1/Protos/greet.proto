@@ -16,9 +16,9 @@ message WagonRequest {
 }
 
 message Wagon {
-  int64 inventory_number = 1;
-  google.protobuf.Timestamp arrival_time = 2;
-  google.protobuf.Timestamp departure_time = 3;
+  optional int64 inventory_number = 1;
+  optional google.protobuf.Timestamp arrival_time = 2;
+  optional google.protobuf.Timestamp departure_time = 3;
 }
 
 message WagonResponse {

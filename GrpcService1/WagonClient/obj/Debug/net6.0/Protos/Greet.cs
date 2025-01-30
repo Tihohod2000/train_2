@@ -27,19 +27,20 @@ namespace GrpcWagonService {
             "ChJQcm90b3MvZ3JlZXQucHJvdG8SBWdyZWV0Gh9nb29nbGUvcHJvdG9idWYv",
             "dGltZXN0YW1wLnByb3RvImwKDFdhZ29uUmVxdWVzdBIuCgpzdGFydF90aW1l",
             "GAEgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIsCghlbmRfdGlt",
-            "ZRgCIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXAihwEKBVdhZ29u",
-            "EhgKEGludmVudG9yeV9udW1iZXIYASABKAMSMAoMYXJyaXZhbF90aW1lGAIg",
-            "ASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIyCg5kZXBhcnR1cmVf",
-            "dGltZRgDIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXAiLQoNV2Fn",
-            "b25SZXNwb25zZRIcCgZ3YWdvbnMYASADKAsyDC5ncmVldC5XYWdvbjJGCgxX",
-            "YWdvblNlcnZpY2USNgoJR2V0V2Fnb25zEhMuZ3JlZXQuV2Fnb25SZXF1ZXN0",
-            "GhQuZ3JlZXQuV2Fnb25SZXNwb25zZUITqgIQR3JwY1dhZ29uU2VydmljZWIG",
-            "cHJvdG8z"));
+            "ZRgCIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXAizwEKBVdhZ29u",
+            "Eh0KEGludmVudG9yeV9udW1iZXIYASABKANIAIgBARI1CgxhcnJpdmFsX3Rp",
+            "bWUYAiABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wSAGIAQESNwoO",
+            "ZGVwYXJ0dXJlX3RpbWUYAyABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0",
+            "YW1wSAKIAQFCEwoRX2ludmVudG9yeV9udW1iZXJCDwoNX2Fycml2YWxfdGlt",
+            "ZUIRCg9fZGVwYXJ0dXJlX3RpbWUiLQoNV2Fnb25SZXNwb25zZRIcCgZ3YWdv",
+            "bnMYASADKAsyDC5ncmVldC5XYWdvbjJGCgxXYWdvblNlcnZpY2USNgoJR2V0",
+            "V2Fnb25zEhMuZ3JlZXQuV2Fnb25SZXF1ZXN0GhQuZ3JlZXQuV2Fnb25SZXNw",
+            "b25zZUITqgIQR3JwY1dhZ29uU2VydmljZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::GrpcWagonService.WagonRequest), global::GrpcWagonService.WagonRequest.Parser, new[]{ "StartTime", "EndTime" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GrpcWagonService.Wagon), global::GrpcWagonService.Wagon.Parser, new[]{ "InventoryNumber", "ArrivalTime", "DepartureTime" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GrpcWagonService.Wagon), global::GrpcWagonService.Wagon.Parser, new[]{ "InventoryNumber", "ArrivalTime", "DepartureTime" }, new[]{ "InventoryNumber", "ArrivalTime", "DepartureTime" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GrpcWagonService.WagonResponse), global::GrpcWagonService.WagonResponse.Parser, new[]{ "Wagons" }, null, null, null, null)
           }));
     }
@@ -298,6 +299,7 @@ namespace GrpcWagonService {
   {
     private static readonly pb::MessageParser<Wagon> _parser = new pb::MessageParser<Wagon>(() => new Wagon());
     private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<Wagon> Parser { get { return _parser; } }
@@ -325,6 +327,7 @@ namespace GrpcWagonService {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Wagon(Wagon other) : this() {
+      _hasBits0 = other._hasBits0;
       inventoryNumber_ = other.inventoryNumber_;
       arrivalTime_ = other.arrivalTime_ != null ? other.arrivalTime_.Clone() : null;
       departureTime_ = other.departureTime_ != null ? other.departureTime_.Clone() : null;
@@ -343,10 +346,23 @@ namespace GrpcWagonService {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long InventoryNumber {
-      get { return inventoryNumber_; }
+      get { if ((_hasBits0 & 1) != 0) { return inventoryNumber_; } else { return 0L; } }
       set {
+        _hasBits0 |= 1;
         inventoryNumber_ = value;
       }
+    }
+    /// <summary>Gets whether the "inventory_number" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasInventoryNumber {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "inventory_number" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearInventoryNumber() {
+      _hasBits0 &= ~1;
     }
 
     /// <summary>Field number for the "arrival_time" field.</summary>
@@ -398,7 +414,7 @@ namespace GrpcWagonService {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (InventoryNumber != 0L) hash ^= InventoryNumber.GetHashCode();
+      if (HasInventoryNumber) hash ^= InventoryNumber.GetHashCode();
       if (arrivalTime_ != null) hash ^= ArrivalTime.GetHashCode();
       if (departureTime_ != null) hash ^= DepartureTime.GetHashCode();
       if (_unknownFields != null) {
@@ -419,7 +435,7 @@ namespace GrpcWagonService {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (InventoryNumber != 0L) {
+      if (HasInventoryNumber) {
         output.WriteRawTag(8);
         output.WriteInt64(InventoryNumber);
       }
@@ -441,7 +457,7 @@ namespace GrpcWagonService {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (InventoryNumber != 0L) {
+      if (HasInventoryNumber) {
         output.WriteRawTag(8);
         output.WriteInt64(InventoryNumber);
       }
@@ -463,7 +479,7 @@ namespace GrpcWagonService {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (InventoryNumber != 0L) {
+      if (HasInventoryNumber) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(InventoryNumber);
       }
       if (arrivalTime_ != null) {
@@ -484,7 +500,7 @@ namespace GrpcWagonService {
       if (other == null) {
         return;
       }
-      if (other.InventoryNumber != 0L) {
+      if (other.HasInventoryNumber) {
         InventoryNumber = other.InventoryNumber;
       }
       if (other.arrivalTime_ != null) {

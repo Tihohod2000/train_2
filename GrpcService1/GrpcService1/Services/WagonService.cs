@@ -22,12 +22,14 @@ public class WagonService : GrpcService1.WagonService.WagonServiceBase
         var wagons = await _repository.GetWagonsAsync(request.StartTime, request.EndTime);
 
         var response = new WagonResponse();
-        response.Wagons.AddRange(wagons.Select(w => new Wagon
-        {
-            InventoryNumber = w.InventoryNumber,
-            ArrivalTime = Timestamp.FromDateTime(w.ArrivalTime.ToDateTime()),
-            DepartureTime = Timestamp.FromDateTime(w.DepartureTime.ToDateTime())
-        }));
+        response.Wagons.AddRange(
+            wagons // Отбрасываем null-элементы
+                .Select(w => new Wagon
+                {
+                    InventoryNumber = w.InventoryNumber, // Подстрахуемся
+                    ArrivalTime = w.ArrivalTime != null ? Timestamp.FromDateTime(w.ArrivalTime.ToDateTime()) : null,
+                    DepartureTime = w.DepartureTime != null ? Timestamp.FromDateTime(w.DepartureTime.ToDateTime()) : null
+                }));
 
         return response;
     }
