@@ -33,8 +33,8 @@ namespace WpfApp1
                 }
 
                 // Преобразуем строки в DateTime
-                DateTime startDateTime = DateTime.ParseExact(startDateText, "yyyy-MM-dd HH:mm:ss.fff", null);
-                DateTime endDateTime = DateTime.ParseExact(endDateText, "yyyy-MM-dd HH:mm:ss.fff", null);
+                DateTime startDateTime = DateTime.ParseExact(startDateText, "yyyy-MM-dd HH:mm:ss.ffffff", null);
+                DateTime endDateTime = DateTime.ParseExact(endDateText, "yyyy-MM-dd HH:mm:ss.ffffff", null);
 
                 // Конвертируем в gRPC формат
                 var startTime = Timestamp.FromDateTime(startDateTime.ToUniversalTime());
@@ -58,10 +58,10 @@ namespace WpfApp1
                     {
                         InventoryNumber = wagon.InventoryNumber.ToString(),
                         ArrivalTime = wagon.ArrivalTime != null 
-                            ? wagon.ArrivalTime.ToDateTime().ToString("yyyy-MM-dd HH:mm:ss.fff") 
+                            ? wagon.ArrivalTime.ToDateTime().ToString("yyyy-MM-dd HH:mm:ss.ffffff") 
                             : "не указано", // Если ArrivalTime пустое, выводим "не указано"
                         DepartureTime = wagon.DepartureTime != null 
-                            ? wagon.DepartureTime.ToDateTime().ToString("yyyy-MM-dd HH:mm:ss.fff") 
+                            ? wagon.DepartureTime.ToDateTime().ToString("yyyy-MM-dd HH:mm:ss.ffffff") 
                             : "не указано" // Если DepartureTime пустое, выводим "не указано"
                     });
                     Console.WriteLine(wagon.InventoryNumber.ToString());

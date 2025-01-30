@@ -4,10 +4,10 @@
         Title="WPF gRPC Client" Height="450" Width="600">
     <Grid>
         <TextBox Name="StartDateTextBox" Width="200" Height="30" Margin="20,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" GotFocus="StartDateTextBox_GotFocus" LostFocus="StartDateTextBox_LostFocus" />
-        <TextBlock Name="StartDatePlaceholder" Text="Start Date (yyyy-MM-dd HH:mm:ss.fff)" Margin="20,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="Gray" Visibility="Visible"/>
+        <TextBlock Name="StartDatePlaceholder" Text="Start Date (yyyy-MM-dd HH:mm:ss.ffffff)" Margin="20,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="Gray" Visibility="Visible"/>
         
         <TextBox Name="EndDateTextBox" Width="200" Height="30" Margin="20,60,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" GotFocus="EndDateTextBox_GotFocus" LostFocus="EndDateTextBox_LostFocus" />
-        <TextBlock Name="EndDatePlaceholder" Text="End Date (yyyy-MM-dd HH:mm:ss.fff)" Margin="20,60,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="Gray" Visibility="Visible"/>
+        <TextBlock Name="EndDatePlaceholder" Text="End Date (yyyy-MM-dd HH:mm:ss.ffffff)" Margin="20,60,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="Gray" Visibility="Visible"/>
         
         <Button Content="Get Wagons" Width="100" Height="30" Margin="20,110,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="OnGetWagonsClick"/>
         
