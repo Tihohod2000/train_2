@@ -2,7 +2,6 @@ namespace WpfApp1.Data;
 
 using Grpc.Net.Client;
 using GrpcWagonService;
-using Google.Protobuf.WellKnownTypes;
 using System.Threading.Tasks;
 
 public class ClientService : IClientService

@@ -1,6 +1,5 @@
 using GrpcService1.Data;
 using GrpcService1.Services;
-using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 

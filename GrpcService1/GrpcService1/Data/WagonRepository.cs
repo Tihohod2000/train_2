@@ -2,7 +2,6 @@ namespace GrpcService1.Data;
 
 using Dapper;
 using System.Collections.Generic;
-using System.Data;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 using Npgsql;
